@@ -35,16 +35,16 @@ for how, if and when caching has been set.
 ## What assumptions did you have to make?
 
 I've assumed that the latest copy of the data is canonical, and I've
-not made any checks to see whether the data is corrupt. If the status code is 200,
-then I assume it's legitimate data.
+not made any checks to see whether the data is corrupt. If the status
+code is 200, then I assume it's legitimate data.
 
 ## Which technologies did you choose? Why?
 
 My constraints was an hour of my time to get a fully working program,
 so I chose Python and Flask as I'm most familiar with these having
-architected and built an API at `https://api.felix.com` on this
-framework. They are my go to tools during hackathons, and I know 
-them very well.
+most recently architected and built an API at `https://api.felix.com`
+on this framework. They are my go to tools during hackathons, and I
+know them well.
 
 As a lanaguge, Python is strongly typed while not requiring type
 annotations, it has a 'truthy' behaviour to empty containers (lists,
@@ -90,10 +90,10 @@ See [Get started](./Get started) above.
 
 # What future features do you think we might be able to build based on this API?
 
-Flock insures drones in flight, so I'll keep to features that sense
-within that context.
+Flock insures drones in flight, so I'll keep to features that make
+sense within that context.
 
-The drones are priced and in various currencies, we could connect to
+The drones are priced, and in various currencies, we could connect to
 an FX API (xe.com etc) to resolve the price to a given currency to
 normalise the data. This allows us to assess the cost of underlying
 asset, it's likely to be a key component of insuring it.
